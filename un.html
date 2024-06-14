@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="utf-8">
+    <title>城市间流量关系弦图</title>
+    <!-- 引入 ECharts -->
+    <script src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/echarts.min.js"></script>
+</head>
+<body style="height: 100%; margin: 0">
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+    <div id="main" style="height: 100%"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '城市间流量关系弦图'
+            },
+            tooltip: {
+                trigger: 'item'
+            },
+            legend: {
+                top: '5%',
+                left: 'center'
+            },
+            series: [
+                {
+                    name: '流量关系',
+                    type: 'chord',
+                    sort: 'ascending',
+                    sortSub: 'descending',
+                    ribbonType: true,
+                    radius: '60%',
+                    itemStyle: {
+                        normal: {
+                            label: {
+                                show: true,
+                                rotate: true
+                            },
+                            chordStyle: {
+                                lineStyle: {
+                                    width: 3,
+                                    color: 'rgba(128, 128, 128, 0.5)'
+                                }
+                            }
+                        },
+                        emphasis: {
+                            chordStyle: {
+                                lineStyle: {
+                                    width: 5
+                                }
+                            }
+                        }
+                    },
+                    data: [
+                        { name: '北京' },
+                        { name: '上海' },
+                        { name: '广州' },
+                        { name: '深圳' },
+                        { name: '成都' }
+                    ],
+                    links: [
+                        { source: '北京', target: '上海', value: 10 },
+                        { source: '北京', target: '广州', value: 8 },
+                        { source: '北京', target: '深圳', value: 12 },
+                        { source: '北京', target: '成都', value: 6 },
+                        { source: '上海', target: '广州', value: 5 },
+                        // ...更多链接数据
+                    ]
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

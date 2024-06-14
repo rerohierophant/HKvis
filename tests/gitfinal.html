@@ -1,0 +1,374 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=scatter-polar-punchCard&version=5.5.0&code=MYewdgzgLgBAFiArgJwjAvDA2gKBvmAcgEYAmAQ0IBojjKbCLqiBmeogFncIFZuA2engKEA7NwAc3AJzdiABjl1qw_CVIAHZiS0NN2lrs5Heu1UX4nRJiSekmFD4lpwBdANw5QkWABNyAJ5omLgERADK5FAo_gHaAGLIAJax2gAqcCgQqVTmhADqAKa-YIXZgemIZTlEALLgNYThiGCpbp7e0DAAtikA-v5Q5BjYwljSVDz8AHSkxNLEohLyEpOirrlYxFTEPKTTEqL8omQsOzw8GzhbPDsS-xz8PKI8LBx3l5tkdw9PL28fK5bKiPaYsKbEfgcFirDjrL7bYgSaRg_jSCT8M7zUhA4jbfgSabyHhw6QcPZUNFA0jyc7EA7SeQcPHnDi42miFHIpkKaT8KgSYhAiYzRnM-TSHjIta4qiiBk8iU8Ca7T7XXZULmY-TEFholUSNVbUg7DjTTnkmkXQFfHYo0SkfjyUiid5w3HbGnm06kQ6iO04hFUL0nUgsX2if1UzY04P0tEYlg6967NlfWlh6bHH0SVaC3GrR1ZpO6_V3aRAwszbWl6QiiubM5Fmt6us7BRA_m-rPO0QsaR985GpFUJPTZ6vDikOEBguj-Tj_5TmfR9UmscTt7T_3Y3Hrheb5dRhvq2ksFjjrePKWzzb88-X5dPVaRoHn0dmvbE0m3JEn42jjw47yASHDSOGt7XKs4LAaB4Emq-d6jvKpKWsSOx6h6yHTKhX63Ku4wggu0ISOC_CQu2Rr8syOHTn8ryUv-br0k-m6TPIuJnFOOG8lKKrSIG1z-uSqLojWlFAm6QGtomOrsZxILyle9FyvCUEgoS4aHNmJp_uyIIoiwuwgRIYHlp27FgjqMn8rumzvHssx9gOjqMUCUYzCscwLEsNqnnK-xiSWLD-s8sp9tMLlOi6KbuvZ2yupFfE8oimGbBMiWStyzKIhcc6RpFizLPcum7NSAr0rJuo7oa-mGgcXnzCOxBxdcZyHOaxXebpaXXCaubmjp4YGka_WEkcobDfJMYCuNQ2kBM-a2si5qTnRtkCbKK1LutGH8Ft9prY8tl5V8_qMua_YOk6WIdo2moXgmNYORx6aakB825nt-mSlmk2-qspbue9f05oDvVbLS6LFtZZZ4q96pnHWWaQiRertgjWD8sj5FQjC6NkEK9k7PIC7Rc5_pLeqJP0slOWmmpWApjq47ZSyQNfL-zqLmtv6tVgsYKPsh6kL-tX3QoMx4aS322niZrillKokrKeKaRCUKxYzO5ImCGscFrqvzGCrGrHsQK_nMYLGQSv53X1OykPswVlubmyA07Vm1hMbttY7F4RjpsvXLZLqzFpE2TIJkOO4S3lFdsvtbKHcdNUsieYymY5p8VFUWxh9JFV5umbZsO5GdMRclW5cvhpXeOkSdw49ReNumRljPgzMvHSkLb4YYSjULGb0dZ4P9xNSP-m6uP8dT2XpoLt-Fq3EnsVAVFvZRxZLWEuBbdDqrPALmKvInWm6m7JVp-Isib6A68BwtuX-0zbsF5VSFGNH0BpH6yT0csQXAOGRVG38JbKk6kPRSO9yKrSvMJRmtl-D7Apq5Y-_dIQfSCnJeG1IxYK3xlMUqRpoR3CUpvLEd8zp3E0n_XGkFCJIjoaA2y_NBYXVYQbRhzVOH6xTKdNcdoFxcLdIzXUwi9a424X3L4WI-HSOZtHDa9JlI3n5hI7EYJA4nAAZJO0ZoXZthap3AxXtWz8WUXaICOjvgESTHaOO15_gM2FI42YziGJ2WuCmZGYYdHgKEsGUmswc6ImdNSJsLMrQ_nMnI4JZpUb4w2oAhJ9c0a2XtlgQsIFK42Sof-MMwT5Q5kjI7ImQiaQoiVNlHhUTqlKyZOUiycwl4T2Hn5GOcx6QmTAhBQmLTdREkVsqRhAI5gXkVJKEaWE5hml7FdLEEMWRzKJC6RZPCJirIWQOdqFSBYZl2ESWsGJWTUkOUBWGYkzkLzmJck5_JELqj2JCVM5y4yiiqobeJcw9500RKXPqGYvT72PgSRhTtgwgqMmCwG1DKnQoPhzBFJ8YUmQhVC-kPkuqdO-E7LFVcS7RzxVbbFXlVL6XxYVJY5LVS4luE7X-z8bnqi7KLJ-wUarDgZQtBq7TdKCK2J6PU3p_FfW8QLYMMIsztxhYfGaYZCRwTlUnE0iqZV9I1FTSV6rlUaiRKNKVSrZUanYUajVoK9EKulXq_ChTzW2sCTqm1Jrfwq2tcazVv5AU3ClSieaysL46u4syp5wJpz7GZXS9KwYQ2cprj42Nj0kmmWDlsd4dEeZbm9cStVoIRZcysZmgtcTE3TkJCSFeukNFquPuOGJnIE3hscl6-QO53XXC2S20FbaZTu2DMAtCJIzamNFkBIdHBAYRLeo6Z2_CKUxgZZiE2dEbwGspcutRgMslVnlLY3S4tqYxUrmSwGGiMxHHSck1xxMXTdwbgTMqM6lh5KemcAiotgyckrmKsp0aQ5fpRKUncGjgymSJJWskq9M5gcuSMlUEMuz1SmaM7VTYMRrIprdTGhYVqbxdFa1lwYBKRTReCvERomwkZ7eCjB90FoXlPf1fZnoySRSmU3cqC0zSnwlLZQ92TiM8Y43nejv02apVfkRhaMxtKTXlQBmTBwJqnAU8necC52lFUIwLe8LMurYhvQ7JMF4aXtL7epJMQEdozhMf3JM8prq9l8cS-cjnHTOZZYRJM40wYSQXj50VWkR2VnnP6nB4TiVniGQ-qYRnvNHOkTCARlHRyQh7OsgcTrthGQrTtW42rvi5azVOAr-yilGRRPrGE8XoJWyOvwfkdHqbhgVj29to0zjngvPkzp_pzyGPnWFALbwpGo2-UI880lTY8PXDBLdTbfSjhCtbWFbrRr9elUYlUT6-rvHPCifdnT7wcAXJl66C69sfnpB5mKzTNi3DeDd8mDlxHrmhOHAJdm3pvDNPHdOpathdYNqE7FuUg2xl-6DhOXnFgfhKWZyF_7vNwkrojk07CzxgUrrCsy32gUfiA7jwNe5Cc496SqadbUut1oeViOYuJ7y09628zmgEFx09E5Znghdf3HneeCfYPcduYwcYLyuNSVStXwB4HAAB6OXMBACF0YAdO9ACB5oABXVADgFoAA8VACq8oAWjlADD-oAELdAB52oAUTTACy8oAO38vDgC6AAGySKUCAAARKIwxMC9F8AMT30xujkA0AACiSFAQo3QMAAD4YDB4AN7CFACAZAvgIAAC5RhhCwLSGAr0YAK5gAAM2QCASPUA4CFBgAAc0KKXwoUBkjABgMAQoYBw_IHMFgMPEfs8bBgN37oWxXCuHz4rqAIAYDl8r4MYYGgQAu6gMIVwOAAC-ABKNfngcAgA0FAJI4ARgJ_wHPx35BkAZ6PwQZA5BfBJEQOnrAhB5AAFJqCECTK_5f-AV-5HwOPkAjue-GgF-5gheyegeUA7eGeheLQwAe-B-weGgZ-5A3QEAa-MAl-YQyA9eKAYAse5gYQSB1-qB0wAAbuQI7lUALCPgANQEEiDN6l69BQBoAu5EAwB0FhBhAIBZBYBEEoEQBkEUFUFCi0H0FqAwAgCF7sGcFcH4CxAQB8HIEkHkGUGFC95f5cGb7mAr7CA_7CDkBgBV6O6FAACCAAHkkOnhgeYFAAEBoIUBnoQKoVUCoGEL0GAGnrSOYIHuYWnnqN4WEAAEZICtBn4BAADiQe0BFBEAhQv-BAEAGgzuUAAAMi7o4TYXIRAAgAAO4Z4N5VA6EJH4DkCWEQDpGlAgHZF5EFHIBFFhC6Hf4JHX63734WFWHVEEB2EOFOEuGFBuEEAeFeElE9BlFp6TqjFlFWGVGZGYGJG1FF6xGFDFHmDTEVHkBBGFCO5dFYEgBDDh4Z7kijH4A5EgD5GF7LGjFNEwD6GnGFDJBlAZ6hAEDzH4BgAoGZGEAAAKsBcAMAAAwmfr4IMWED0V8RAMAFEO3qCQQEnini7lEIUOEEEOHt0E4SfmfrCacQEN0CEY7uEEkAAF6ZEwFgBwH754HB6qHoFvFX44HIB4GqHUEwAABUueEGngchdxXBM-GePufuQwJxMAhhSQEBlJbu2xgQ0BsB8BVJKQ5htJ4hMA2B0QjJ_evg5hbJMAPAXJXBNxzR5gdJHx3QXxsxEA2Jk-9hXxzurulp8Jt-Hx4eKJ0AEeGJABWJwpfJMAtpZQHuQp9Bvp4QdhJhuxXBoAjuyeThAAxOQHGZafgLkSkOXhntsMqeCU4RAAASkIQPQfoToUvqvu4EAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/china.js"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+const mid_data = [
+  [9,56.21917808,57],
+[1,152.8767123,155],
+[15,182.4657534,185],
+[12,182.4657534,185],
+[1,46.35616438,47],
+[11,189.369863,192],
+[11,68.05479452,69],
+[20,151.890411,154],
+[10,79.89041096,81],
+[9,6.904109589,57],
+[1,7.890410959,155],
+[15,9.863013699,185],
+[12,14.79452055,185],
+[1,19.7260274,47],
+[11,20.71232877,192],
+[11,20.71232877,69],
+[20,21.69863014,154],
+[10,23.67123288,81],
+[18,26.63013699,189],
+[8,26.63013699,69],
+[3,26.63013699,110],
+[6,28.60273973,155],
+[18,30.57534247,192],
+[18,30.57534247,69],
+[12,30.57534247,192],
+[12,30.57534247,69],
+[10,33.53424658,192],
+[6,33.53424658,77],
+[33,34.52054795,189],
+[12,35.50684932,192],
+[8,35.50684932,77],
+[6,37.47945205,136],
+[11,37.47945205,69],
+[9,40.43835616,115],
+[6,41.42465753,69],
+[4,41.42465753,50],
+[13,42.4109589,192],
+[7,45.36986301,115],
+[4,45.36986301,50],
+[13,47.34246575,77],
+[8,48.32876712,189],
+[10,49.31506849,189],
+[6,50.30136986,192],
+[4,52.2739726,69],
+[7,66.08219178,185],
+[10,72.98630137,57],
+[1,73.97260274,147],
+[41,74.95890411,136],
+[9,74.95890411,155],
+[18,77.91780822,115],
+[2,81.8630137,185],
+[10,85.80821918,147],
+[3,87.78082192,136],
+[2,88.76712329,185],
+[2,88.76712329,50],
+[2,88.76712329,81],
+[1,89.75342466,192],
+[1,89.75342466,136],
+[1,89.75342466,155],
+[17,90.73972603,110],
+[3,93.69863014,50],
+[10,95.67123288,136],
+[10,95.67123288,136],
+[7,95.67123288,136],
+[10,98.63013699,110],
+[13,99.61643836,110],
+[6,99.61643836,121],
+[4,100.6027397,81],
+[1,101.5890411,147],
+[4,101.5890411,136],
+[15,102.5753425,147],
+[20,102.5753425,185],
+[3,106.5205479,136],
+[1,114.4109589,154],
+[1,118.3561644,147],
+[7,118.3561644,147],
+[1,119.3424658,52],
+[5,121.3150685,110],
+[2,122.3013699,52],
+[8,122.3013699,52],
+[3,123.2876712,136],
+[6,127.2328767,52],
+[10,128.2191781,52],
+[16,128.2191781,50],
+[4,130.1917808,81],
+[5,131.1780822,192],
+[7,131.1780822,69],
+[1,132.1643836,155],
+[12,133.1506849,77],
+[8,136.109589,102],
+[3,138.0821918,52],
+[4,138.0821918,52],
+[10,138.0821918,52],
+[7,140.0547945,52],
+[4,145.9726027,52],
+[6,148.9315068,155],
+[1,150.9041096,154],
+[8,151.890411,189],
+[38,153.8630137,136],
+[2,153.8630137,110],
+[1,155.8356164,102],
+[3,155.8356164,110],
+[3,159.7808219,47],
+[6,161.7534247,47],
+[6,162.739726,50],
+[3,165.6986301,110],
+[25,184.4383562,115],
+[43,187.3972603,189],
+[17,188.3835616,192],
+[9,188.3835616,147],
+[20,190.3561644,192],
+[18,190.3561644,155],
+[12,190.3561644,47],
+[13,190.3561644,102],
+[13,190.3561644,102],
+[6,191.3424658,47],
+[13,192.3287671,102],
+[4,194.3013699,147],
+[8,194.3013699,192],
+[6,195.2876712,69],
+[30,198.2465753,147],
+[9,198.2465753,192],
+[4,199.2328767,110],
+[7,200.2191781,102],
+[23,201.2054795,189],
+[13,204.1643836,192],
+[3,204.1643836,110],
+[8,206.1369863,189],
+[23,207.1232877,121],
+[12,209.0958904,192],
+[13,209.0958904,121],
+[6,210.0821918,185],
+[10,211.0684932,121],
+[6,213.0410959,192],
+[34,213.0410959,185],
+[11,214.0273973,136],
+[11,214.0273973,192],
+[19,214.0273973,81],
+[20,215.0136986,154],
+[20,215.0136986,154],
+[7,215.0136986,77],
+[15216154],
+[20,216.9863014,147],
+[13,218.9589041,192],
+[20,220.9315068,192],
+[22,220.9315068,189],
+[12,220.9315068,136],
+[12,220.9315068,192],
+[2,221.9178082,185],
+[12,221.9178082,192],
+[12,221.9178082,77],
+[10,221.9178082,155],
+[15,225.8630137,154],
+[16,225.8630137,185],
+[15,229.8082192,155],
+[11,236.7123288,192],
+[2,238.6849315,155],
+[2,238.6849315,52],
+[2,238.6849315,81],
+[2,238.6849315,185],
+[2,238.6849315,47],
+[2,238.6849315,102],
+[2,238.6849315,69],
+[2,238.6849315,110],
+[2,238.6849315,154],
+[2,238.6849315,192],
+[15,239.6712329,154],
+[2,242.630137,77],
+[1,242.630137,155],
+[9,242.630137,69],
+[4,243.6164384,136],
+[14,246.5753425,192],
+[12,246.5753425,102],
+[6,246.5753425,189],
+[4,248.5479452,147],
+[12,250.5205479,69],
+[1,252.4931507,154],
+[9,252.4931507,57],
+[8,255.4520548,57],
+[8,255.4520548,102],
+[10,262.3561644,77],
+[25,263.3424658,185],
+[10,263.3424658,110],
+[8,267.2876712,185],
+[1,274.1917808,147],
+[10,276.1643836,147],
+[4,276.1643836,115],
+[10,278.1369863,69],
+[25,279.1232877,155],
+[6,279.1232877,147],
+[1,284.0547945,50],
+[4,285.0410959,136],
+[6,285.0410959,81],
+[3,286.0273973,110],
+[8,289.9726027,102],
+[16,292.9315068,115],
+[3,292.9315068,50],
+[3,293.9178082,81],
+[1,294.9041096,155],
+[2,294.9041096,185],
+[8,294.9041096,81],
+[3,295.890411,136],
+[16,296.8767123,155],
+[6,296.8767123,155],
+[16,300.8219178,102],
+[26,301.8082192,147],
+[2,303.7808219,57],
+[8,305.7534247,147],
+[3,307.7260274,192],
+[1,307.7260274,154],
+[9,308.7123288,115],
+[7,308.7123288,57],
+[8,309.6986301,102],
+[10,313.6438356,147],
+[9,315.6164384,155],
+[3,316.6027397,110],
+[1,318.5753425,81],
+[12,318.5753425,81],
+[23,319.5616438,147],
+[8,321.5342466,50],
+[1,324.4931507,155],
+[23,333.369863,185],
+[7,334.3561644,57],
+[7,334.3561644,147],
+[12,335.3424658,192],
+[12,335.3424658,69],
+[28,337.3150685,155],
+[27,338.3013699,115],
+[24,339.2876712,185],
+[6,340.2739726,77],
+[24,341.260274,121],
+[5,341.260274,57],
+[12,343.2328767,147],
+[10,344.2191781,189],
+[13,344.2191781,154],
+[20,344.2191781,154],
+[17,347.1780822,155],
+[9,347.1780822,47],
+[20,349.1506849,147],
+[20,349.1506849,154],
+[12,349.1506849,102],
+[33,350.1369863,121],
+[16,350.1369863,154],
+[15,350.1369863,81],
+[8,351.1232877,69],
+[20,352.109589,110],
+[30,352.109589,147],
+  ];
+// 计算极坐标几何中心的实际位置
+const linesData = mid_data.map(item => ({
+  coords: [
+    [0, 0], // from the geometric center
+    [item[0], item[1]] // to the data point
+  ]
+}));
+
+option = {
+  polar: {
+    radius:['0%','30%']
+  },
+  tooltip: {
+    formatter: function (params) {
+      return (
+        params.value[2] +
+        ' commits in ' +
+        hours[params.value[1]] +
+        ' of ' +
+        days[params.value[0]]
+      );
+    }
+  },
+  angleAxis: {
+    type: 'value',
+    min:0,
+    max:360,
+    boundaryGap: false,
+    splitLine: {
+      show: true
+    },
+    axisLine: {
+      show: true
+    }
+  },
+  radiusAxis: {
+    type: 'value',
+    min:0,
+    max:48,
+    axisLine: {
+      show: false
+    },
+    axisLabel: {
+      rotate: 45,
+      show:false,
+    }
+  },
+  series: [
+    {
+      name: 'Punch Card',
+      type: 'scatter',
+      coordinateSystem: 'polar',
+      symbolSize: function (val) {
+        return val[2] * 0.05;
+      },
+      data: mid_data,
+      animationDelay: function (idx) {
+        return idx * 5;
+      }
+    },
+    {
+      name: 'Lines',
+      type: 'lines',
+      coordinateSystem: 'polar',
+      data: linesData,
+      lineStyle: {
+        color: '#aaa',
+        width: 1,
+        type: 'solid'
+      },
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=pie-roseType-simple&code=PYBwLglsB2AEC8sDeAoWszGAG0iAXMmuhgE4QDmFApqYQOQRjUC29ANMegGbCksBDMMzqx6SAQF9YAHgBGpAPQA-JHOmEkAY2kAKJABNJAUgCU9YpM7oAzrQjUbhANpciJEtAEtqDAHKUABaQ0BQC2NSwAMKBAqRgHG7oYACeIL5iIA6JHuikAgYQAK5OsM70AKwADMYcYgCMVTX0ALrWuVrU0CIulc3sYtW1bUmwNmBxYACCoRGEVQOKirCAAPqA05qAS5GAZXqjpMB2ACppGfRx1AI5udgCctTYmqO2gcAA7oTc4XajVqNMrADKqTm7ly6DkfAMtAASgViqUABzfdoeAxCAQuR6wBYLRrsbF49gAZkJBNxCwATPj6vD2Lj6uSCTiFgA2dis6m0-ps9g0-ok-pc-nsAAs3IZC15JJpooZovxCxJrMxrJxFVpDPJNMpRP5AHYiUyebSaRSZTj9fVWZr1SL2GqyaSVbSKeb2Az6vaGWryfyufLnW79eSzaMWm5JMQw5IANxAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="frame2_right" style="height: 100%"></div>
+  
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/echarts.min.js"></script>
+  <script type="text/javascript">
+    var frame2_right_Chart = echarts.init(document.getElementById('frame2_right'), null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var option;
+    const popularity=[
+      36,12,0,0,0,24,2,24,80,234,24,0,60,36,44,64,88,130,64,284,220,64,48,308,180,0,0,216,60,198,0,400,0,100,0,264,0,0,0,110,0,0,
+      120,0,270,240,504,140,660,119,360,70,64,360,0,480,320,340,300,392,192,72,55,130,0,0,320,0,140,400,306,60,165,168,55,253,143,0,0,0,110,405,480,400
+    ];
+    const gender_type=[]
+
+    for (let i=0;i<popularity.length;i++){
+      popularity[i]=popularity[i]**0.6
+      if (popularity[i]===0){
+        gender_type.push(0)
+      }else{
+        gender_type.push(1)
+      }
+    }
+
+    option = {
+      tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+      },
+      polar: [
+        {
+          radius: ['60%', '45%']
+        },
+        {
+          radius: ['45%', '40%']
+        }
+      ],
+      radiusAxis: [
+        {
+          show:false,
+          polarIndex:0,
+        },
+        {        
+          show:false,
+          polarIndex:1,
+        }
+      ],
+      angleAxis: [
+        {
+          type: 'category',
+          startAngle: 0,
+          axisLabel:{
+            show:false
+          },
+          polarIndex:0,
+        },
+        {
+          type: 'category',
+          startAngle: 0,
+          axisLabel:{
+            show:false
+          },
+          polarIndex:1,
+        },
+
+      ],
+
+      series: [
+        {
+          name: 'Nightingale Chart',
+          type: 'pie',
+          radius: ['60%', '100%'],
+          center: ['50%', '50%'],
+          startAngle: 0, // 开始角度
+          roseType: 'area',
+          label: {
+            show: false
+          },
+          itemStyle: {
+            borderRadius: 8
+          },
+          data: [
+            6,3,0,0,0,4,2,4,8,13,8,0,2,6,4,12,11,13,8,6,11,18,6,6,10,0,0,12,10,18,0,20,0,10,0,33,0,0,0,10,0,0,
+            6,0,15,12,28,20,33,17,30,10,8,18,0,24,20,17,16,28,12,4,5,10,0,0,16,0,10,20,17,2,15,12,5,23,11,0,0,0,10,27,24,20
+          ]
+        },
+        {
+          type: 'bar',
+          data: popularity,
+          coordinateSystem: 'polar',
+          polarIndex:0,
+          label: {
+            show: false,
+            position: 'middle',
+            formatter: '{b}: {c}'
+          },
+          barCategoryGap: '5%',
+          barWidth:'15%'
+        },
+        {
+          type: 'bar',
+          data: gender_type,
+          coordinateSystem: 'polar',
+          polarIndex:1,
+          label: {
+            show: false,
+            position: 'middle',
+            formatter: '{b}: {c}'
+          },
+          barCategoryGap: 0
+        },
+      ]
+    };
+
+    if (option && typeof option === 'object') {
+      frame2_right_Chart.setOption(option);
+    }
+
+    window.addEventListener('resize', frame2_right_Chart.resize);
+  </script>
+</body>
+</html>
